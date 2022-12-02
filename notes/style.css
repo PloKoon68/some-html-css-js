@@ -3,7 +3,7 @@
   padding: 0;
 
   /*this attributes adds the paddings and 
-  the border widths of a box to the box width 
+  the border withs of a box to the width 
   value*/
   box-sizing: border-box;
 }
@@ -34,4 +34,19 @@ h2 {
   width: 400px;
   padding: 25px;
   margin-top: 25px;
+}
+
+input,
+button {
+  padding: 10px;
+  font-size: 12px;
+}
+
+/*selecting a child element*/
+#your-name h2 {
+  color: green;
+}
+
+#lego-clone {
+  height: 230px;
 }
