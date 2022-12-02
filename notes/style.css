@@ -3,7 +3,7 @@
   padding: 0;
 
   /*this attributes adds the paddings and 
-  the border withs of a box to the width 
+  the border widths of a box to the box width 
   value*/
   box-sizing: border-box;
 }
