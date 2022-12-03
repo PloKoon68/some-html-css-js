@@ -15,6 +15,7 @@ let score = 20,
 let num = Math.trunc(Math.random() * 20 + 1);
 let gameOver = false;
 
+//when playing game
 document.querySelector('.check').addEventListener('click', function () {
   let guess = Number(document.querySelector('.guess').value);
   console.log(guess, gameOver);
