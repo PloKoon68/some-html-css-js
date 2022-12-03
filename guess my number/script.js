@@ -46,6 +46,7 @@ document.querySelector('.check').addEventListener('click', function () {
   }
 });
 
+//when playing again
 document.querySelector('.again').addEventListener('click', function () {
   score = 20;
   num = Math.trunc(Math.random() * 20 + 1);
