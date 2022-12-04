@@ -16,7 +16,7 @@ for (let i = 0; i < btnOpenModal.length; i++)
     overlay.classList.remove('hidden');
   });
 
-
+//after opening the modal, close it when clicking the close button
 btnCloseModal.addEventListener("click", function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
