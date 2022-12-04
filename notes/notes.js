@@ -102,3 +102,22 @@ const exp = function () {
 
 const arrw = () => console.log(6 + 3);
 */
+
+
+
+/*
+var firstName = "ahmet";
+const obj = {
+  firstName: "Mehmet",
+  showName: function () {
+    console.log(this.firstName);
+  },
+
+  //this keyword in arrow function refers to window
+  //not obj. So don't use arrow in obj.
+  showNameArrow: () => console.log(this.firstName),
+};
+
+obj.showName();
+obj.showNameArrow();
+*/
