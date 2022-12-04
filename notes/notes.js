@@ -121,3 +121,21 @@ const obj = {
 obj.showName();
 obj.showNameArrow();
 */
+
+/*
+const obj = {
+  name: "Mehmet",
+  friends: ["Ahmet", "Fatih", "Ali"],
+};
+
+//when assigning an object to another, they will
+//point to the same object in the heap
+const obj2 = obj;
+
+//to actually copy an object, use the following method
+const copyObj = Object.assign({}, obj);
+//this method copies the obj to a new empty obj
+//however the object(friends) inside obj and copyObj
+//are the same array, so this method doesn't copy 
+//properly
+*/
