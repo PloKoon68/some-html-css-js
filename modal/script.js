@@ -21,3 +21,5 @@ btnCloseModal.addEventListener("click", function () {
   modal.classList.add("hidden");
   overlay.classList.add("hidden");
 });
+
+//also we should close the modal when clicking the overlay
