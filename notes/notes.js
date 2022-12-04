@@ -60,3 +60,30 @@ live-server  //to run it on browser
 
 
 */
+
+/*
+
+Mat.max(arr);      //returns the max of an arr
+arr1.concat(arr2); //concats two arr
+*/
+
+/* 
+const obj1 = {
+  year: 2017,
+  calcAge: function (birthYear) {
+    return this.year - birthYear;
+  },
+};
+
+const obj2 = {
+  year: 2022,
+};
+
+//method borrowing
+obj2.calcAge2 = obj1.calcAge;
+
+console.log(obj2.calcAge2(2002));
+console.log(this);
+*/
+
+
