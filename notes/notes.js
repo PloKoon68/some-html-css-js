@@ -87,3 +87,18 @@ console.log(this);
 */
 
 
+/*
+decl(); //no error
+exp();  //error
+arrw(); //error
+
+function decl() {
+  console.log(6 + 1);
+}
+
+const exp = function () {
+  console.log(5 + 3);
+};
+
+const arrw = () => console.log(6 + 3);
+*/
