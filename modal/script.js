@@ -10,7 +10,14 @@ const btnOpenModal = document.querySelectorAll('.show-modal');
 
 //when looping trough this list
 for (let i = 0; i < btnOpenModal.length; i++)
+  //when clicking any of the buttons, the modal will show up
   btnOpenModal[i].addEventListener('click', function () {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
   });
+
+
+btnCloseModal.addEventListener("click", function () {
+  modal.classList.add("hidden");
+  overlay.classList.add("hidden");
+});
