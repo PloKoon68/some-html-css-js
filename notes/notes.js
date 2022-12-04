@@ -139,3 +139,37 @@ const copyObj = Object.assign({}, obj);
 //are the same array, so this method doesn't copy 
 //properly
 */
+
+
+
+/*
+//destructing-unpacking arrays
+const arr = [1, 3, 9, [7, 7, 8]];
+
+//unpacks only the first to element
+const [one, three] = arr;
+
+//unpacks first and third element
+const [one2, , nine] = arr;
+
+const [, , , [seven1, seven2, eight]] = arr;
+console.log(seven1, seven2, eight);
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
