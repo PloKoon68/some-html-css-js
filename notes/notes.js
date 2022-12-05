@@ -177,6 +177,11 @@ console.log(cities, name, age, obj2);
 
 //if unpack with changed variable names:
 let { age: ageCopy, obj2: obj2Copy } = obj;
+//unpacking  object in object
+let {
+  obj2: { name: n, age },
+} = obj;
+console.log(n, obj.obj2.name);
 */
 
 
