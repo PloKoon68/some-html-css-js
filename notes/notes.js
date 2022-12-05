@@ -182,6 +182,10 @@ let {
   obj2: { name: n, age },
 } = obj;
 console.log(n, obj.obj2.name);
+
+
+//... opeartors copy arrays and objects
+const ob = { ...obj };
 */
 
 
