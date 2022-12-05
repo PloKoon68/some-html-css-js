@@ -142,6 +142,7 @@ const copyObj = Object.assign({}, obj);
 
 
 
+
 /*
 //destructing-unpacking arrays
 const arr = [1, 3, 9, [7, 7, 8]];
@@ -151,11 +152,10 @@ const [one, three] = arr;
 
 //unpacks first and third element
 const [one2, , nine] = arr;
-
-const [, , , [seven1, seven2, eight]] = arr;
-console.log(seven1, seven2, eight);
+//assign to some number in case it does not exist
+const [, , l, [seven1, seven2, eight], f = 1] = arr;
+console.log(seven1, seven2, eight, f, l);
 */
-
 
 
 
