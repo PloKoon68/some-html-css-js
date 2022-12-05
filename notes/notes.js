@@ -170,6 +170,7 @@ const obj = {
   },
 };
 
+//if you use the exact attribute names when unpacking, they will be unpacked
 const { cities, name, age, obj2 } = obj;
 console.log(cities, name, age, obj2);
 */
