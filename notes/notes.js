@@ -157,6 +157,22 @@ const [, , l, [seven1, seven2, eight], f = 1] = arr;
 console.log(seven1, seven2, eight, f, l);
 */
 
+/*
+//destructuring objects
+const obj = {
+  cities: ["Ankara", "Istanbul", "Izmir"],
+  countries: ["Turkey", "Germany", "America"],
+  name: "Mehmet",
+  age: 20,
+  obj2: {
+    name: "Ahmet",
+    age: 18,
+  },
+};
+
+const { cities, name, age, obj2 } = obj;
+console.log(cities, name, age, obj2);
+*/
 
 
 
