@@ -217,7 +217,26 @@ console.log();
 */
 
 
+/*
+//looping through objects
+const obj = {
+  days: ["sunday", "monday", "thursday"],
+  openingHours: {
+    snday: [9.1],
+    mnday: [8.3],
+    thursdy: [7.54],
+  },
+};
 
+//this returns an array which consists of the names of attributes in obj
+console.log(Object.keys(obj));
+
+//this returns an array which consists of the attributes of obj
+console.log(Object.values(obj));
+
+//this returns an array which consists of arrays with 2 values: key name and value
+console.log(Object.entries(obj));
+*/
 
 
 
