@@ -238,12 +238,18 @@ console.log(Object.values(obj));
 console.log(Object.entries(obj));
 */
 
+/*
+//sets
+const ordersSet = new Set(["ahmet", "Mehmet", "Ayse", "Elif"]);
+
+console.log(ordersSet.size);
+console.log(ordersSet.has("Mehmet"));
+ordersSet.add("Görkem");
+ordersSet.delete("Elif");
+ordersSet.clear();
 
 
-
-
-
-
+*/
 
 
 
