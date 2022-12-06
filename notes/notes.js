@@ -204,7 +204,17 @@ for (const item of arr) console.log(item);
 for (const [index, item] of arr.entries()) console.log(index, item);
 */
 
+/* //checking if method or attribute exists
+const obj = {
+  methd(name) {
+    console.log(name);
+  },
+};
 
+//?. checks if the method exists. İf not it will return undefined.
+obj.methd?.("Mehmet");
+console.log();
+*/
 
 
 
