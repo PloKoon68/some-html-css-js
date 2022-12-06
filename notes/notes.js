@@ -252,4 +252,18 @@ ordersSet.clear();
 */
 
 
+/*
+const rest = new Map();
+rest.set("Mehmet", 21);
+rest.set(1, [2, 3, 5, 7]);
+rest.set(3, 5).set(4, 5).set("err", { name: "Mehmet" });
+console.log(rest.get(1));
+console.log(rest.size);
+rest.delete(3);
+
+//we can set html elements in map
+rest.set(document.querySelector("h1"), "Heading");
+console.log();
+*/
+
 
