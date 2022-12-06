@@ -189,6 +189,21 @@ const ob = { ...obj };
 */
 
 
+/*
+//the ?? operator is the same as || but doesn't returns false when the expression
+//is 0 or '', only when it is null or undefined.
+*/
+
+/*
+//looping trough iterables
+const arr = [1, 2, 3, 4, 5];
+//this only accesses the elements not indexes
+for (const item of arr) console.log(item);
+
+//for also the indexis:
+for (const [index, item] of arr.entries()) console.log(index, item);
+*/
+
 
 
 
