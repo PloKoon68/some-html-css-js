@@ -267,3 +267,17 @@ console.log();
 */
 
 
+
+/*
+//these string method converts the primitive string to object string, applies the
+//method, then converts back to primitive string
+const aString = " a String a \n";
+console.log(aString.indexOf("a"));
+console.log(aString.lastIndexOf("a"));
+console.log(aString.slice(2, -2));
+console.log(aString.toLowerCase());
+console.log(aString.toUpperCase());
+console.log(aString.trim());
+*/
+
+
