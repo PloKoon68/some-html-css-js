@@ -35,13 +35,25 @@ document.querySelector('.check').addEventListener('click', function () {
         document.querySelector('.highscore').textContent = highScore;
       }
     } else if (guess < num) {
-      document.querySelector('.message').textContent = 'Too low';
-      score--;
-      document.querySelector('.score').textContent = score;
+      if (Math.abs(num - guess) <= 4) {
+        document.querySelector('.message').textContent = 'low';
+        score--;
+        document.querySelector('.score').textContent = score;
+      } else {
+        document.querySelector('.message').textContent = 'Too low';
+        score--;
+        document.querySelector('.score').textContent = score;
+      }
     } else if (guess > num) {
-      document.querySelector('.message').textContent = 'Too high';
-      score--;
-      document.querySelector('.score').textContent = score;
+      if (Math.abs(num - guess) <= 4) {
+        document.querySelector('.message').textContent = 'high';
+        score--;
+        document.querySelector('.score').textContent = score;
+      } else {
+        document.querySelector('.message').textContent = 'Too high';
+        score--;
+        document.querySelector('.score').textContent = score;
+      }
     }
   }
 });
