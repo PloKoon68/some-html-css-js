@@ -326,6 +326,27 @@ const obj2 = {
 };
 
 const outsideFunc = obj1.intro;
-
+//with call method
 outsideFunc.call(obj2, 20, "girl");
+//with bind method, returns new funtion which "this" is binded to the object passed as argument
+outsideFunc.bind(obj2)(15, "girl");
+
+const f = function (name, age) {
+  console.log(`${name} is ${age} years old.`);
+};
+//using bind method and passing the first parameter null(which mean setting it as first class again), you can the functions parameters
+//like setting name as jason here
+const bindedF = f.bind(null, "jason");
+bindedF(12);
 */
+
+
+
+
+
+
+
+
+
+
+
