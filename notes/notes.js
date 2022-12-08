@@ -372,6 +372,10 @@ setTimeout(function () {
 */
 
 
-
+/*
+//one time execution functions works only 1 time
+(function () {
+  console.log("only 1");
+})();*/
 
 
