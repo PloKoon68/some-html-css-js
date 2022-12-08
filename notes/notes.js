@@ -395,3 +395,20 @@ console.log(arr.reverse());
 console.log([1, 2, 4].concat([1, 5, 7]));
 console.log([...[1, 2, 4], ...[7, 9, 6]]);
 */
+
+
+/*
+//forEach() in  arrays
+
+const arr = [-5, 8, 96, -6, -2];
+
+//the function parameter runs in each iteration.
+//the parameter of the call back function are orderly currentElement, index, arr. You can enter arbitrary number of parameters
+arr.forEach(function (element, ind, arr) {
+  console.log(
+    `${ind + 1}. element is ${element > 0 ? "positive" : "negative"}`
+  );
+});
+
+//note: you can not break out in forEach loops
+*/
