@@ -379,3 +379,19 @@ setTimeout(function () {
 })();*/
 
 
+/*
+//array methods
+const arr = [1, 2, 3, 4, 5];
+
+//slice is the same slice in string methods
+console.log(arr.slice(2, 4));
+console.log(arr);
+//splice is almost same as slice but it changes the original array, and the first paramater takes the start, second takes the number of element
+//to delete instead of end
+console.log(arr.splice(2, 2));
+//reeverse also changes the original
+console.log(arr.reverse());
+//to concat use the following or the next
+console.log([1, 2, 4].concat([1, 5, 7]));
+console.log([...[1, 2, 4], ...[7, 9, 6]]);
+*/
