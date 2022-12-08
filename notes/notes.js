@@ -346,7 +346,23 @@ document
 */
 
 
+/*
+//closure: when an inner function is returned and stored as a variable, the js engine will store the variables of the outer functions and make them
+//accessible for the inner function whenever it is called.
 
+function out() {
+  let count = 0;
+  return function inner() {
+    count++;
+    console.log(count);
+  };
+}
+
+const inF = out();
+
+inF();
+inF();
+*/
 
 
 
