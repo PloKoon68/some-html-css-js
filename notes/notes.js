@@ -338,6 +338,11 @@ const f = function (name, age) {
 //like setting name as jason here
 const bindedF = f.bind(null, "jason");
 bindedF(12);
+
+//when using an object method, by default this keyword in the object would be attached to the lego-clone. So we should blind it back to the object
+document
+  .querySelector("#lego-clone")
+  .addEventListener("click", obj1.intro.bind(obj1, 15, "clone"));
 */
 
 
