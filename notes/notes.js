@@ -308,3 +308,24 @@ const highOrder = function (f) {
 
 highOrder(firstClass);
 */
+
+
+/*
+//function methods:
+
+//when assigning a method using "this" to a firstclass function, you should specify the new this for the function using call method
+const obj1 = {
+  name: "Mehmet",
+  intro: function (age, gender) {
+    console.log(`${this.name} is a ${age} years old ${gender}`);
+  },
+};
+
+const obj2 = {
+  name: "Elif",
+};
+
+const outsideFunc = obj1.intro;
+
+outsideFunc.call(obj2, 20, "girl");
+*/
