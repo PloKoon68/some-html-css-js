@@ -365,7 +365,11 @@ inF();
 */
 
 
-
+/* //time function
+setTimeout(function () {
+  console.log("xx");
+}, 3000);
+*/
 
 
 
