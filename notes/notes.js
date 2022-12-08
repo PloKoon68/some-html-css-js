@@ -281,3 +281,17 @@ console.log(aString.trim());
 */
 
 
+/*
+//converting underscore names to camelCase
+const arr = ["under_score", "first_name", "some_variable", "ali_vel"];
+
+const camel = function (arr) {
+  for (const str of arr) {
+    const char = str[str.indexOf("_") + 1];
+    console.log(str.split("_" + char).join(char.toUpperCase()));
+  }
+};
+camel(arr);
+*/
+
+
