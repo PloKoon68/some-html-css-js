@@ -295,3 +295,16 @@ camel(arr);
 */
 
 
+/*
+//first class - callback function
+const firstClass = function () {
+  return "calling firstClass";
+};
+//high order functions
+const highOrder = function (f) {
+  //note that you can use f.name
+  console.log(f() + ` using ${f.name}` + " from higher");
+};
+
+highOrder(firstClass);
+*/
