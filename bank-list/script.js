@@ -76,6 +76,7 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 /////////////////////////////////////////////////
 
 
+
 const displayMovements = function (movements) {
   //before displaying the movements, just remove the old ones by assignin
   //innerHTML to ''.
@@ -89,7 +90,7 @@ const displayMovements = function (movements) {
           <div class="movements__type movements__type--${type}">${
       index + 1
     } ${type}</div>
-          <div class="movements__value">${element}€</div>
+          <div class="movements__value">${Math.abs(element)}€</div>
         </div>`;
 
     //adding the created row to the movements panel
@@ -97,18 +98,31 @@ const displayMovements = function (movements) {
   });
 };
 
+displayMovements(movements);
 
+//calulating balance with reduce method
+const calcDisplayBalance = function (movements) {
+  const balance = movements.reduce((accumulator, current) => {
+    return (accumulator += current);
+  }, 0);
+  labelBalance.textContent = balance + ' EUR';
+};
 
-//creating the user names
-accounts.forEach(function (acc) {
-  const strs = acc.owner.toLowerCase().split(' ');
-  acc.userName = strs
-    .map(str => {
-      return str[0];
-    })
-    .join('');
-});
-console.log(accounts);
+calcDisplayBalance(account1.movements);
+
+//creating the user names with map method
+
+const createUserNames = function (accounts) {
+  accounts.forEach(function (acc) {
+    const strs = acc.owner.toLowerCase().split(' ');
+    acc.userName = strs
+      .map(str => {
+        return str[0];
+      })
+      .join('');
+  });
+};
+createUserNames(accounts);
 
 
 
