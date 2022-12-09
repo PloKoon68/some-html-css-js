@@ -99,6 +99,16 @@ const displayMovements = function (movements) {
 
 
 
+//creating the user names
+accounts.forEach(function (acc) {
+  const strs = acc.owner.toLowerCase().split(' ');
+  acc.userName = strs
+    .map(str => {
+      return str[0];
+    })
+    .join('');
+});
+console.log(accounts);
 
 
 
