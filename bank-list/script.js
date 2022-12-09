@@ -74,3 +74,37 @@ const currencies = new Map([
 const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 
 /////////////////////////////////////////////////
+
+
+const displayMovements = function (movements) {
+  //before displaying the movements, just remove the old ones by assignin
+  //innerHTML to ''.
+  containerMovements.innerHTML = '';
+
+  //looping trough the movements to display each of them on screen
+  movements.forEach((element, index) => {
+    const type = element > 0 ? 'deposit' : 'withdrawal';
+    //creating the new movement row as an html element.
+    const htmlMovementRow = `<div class="movements__row">
+          <div class="movements__type movements__type--${type}">${
+      index + 1
+    } ${type}</div>
+          <div class="movements__value">${element}€</div>
+        </div>`;
+
+    //adding the created row to the movements panel
+    containerMovements.insertAdjacentHTML('afterbegin', htmlMovementRow);
+  });
+};
+
+
+
+
+
+
+
+
+
+
+
+
