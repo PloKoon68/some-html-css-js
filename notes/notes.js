@@ -440,4 +440,13 @@ const dolarArrow = euro.map((value) => {
   return value * 1.1;
 });
 console.log(dolar);
+
+
+//filter method again returns an array of elements that satisfies the boolean
+// condition written in the return statement.
+
+const negatives = euro.filter(function (value) {
+  return value < 0;
+});
+console.log(negatives);
 */
