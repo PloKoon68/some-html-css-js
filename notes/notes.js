@@ -412,3 +412,18 @@ arr.forEach(function (element, ind, arr) {
 
 //note: you can not break out in forEach loops
 */
+
+
+/*
+//foreach also used in maps and sets
+const map = new Map([
+  ["Mehmet", 14],
+  ["Ahmet", 16],
+  ["Salih", 20],
+]);
+map.forEach(function (value, key, map) {
+  console.log(`${key}: ${value}`);
+});
+*/
+
+
