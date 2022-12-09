@@ -110,6 +110,32 @@ const calcDisplayBalance = function (movements) {
 
 calcDisplayBalance(account1.movements);
 
+
+//calculating the total deposits and withdrawals
+const calcDisplaySummary = function (acc) {
+  const incomes = acc.movements
+    .filter(mov => mov > 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumIn.textContent = `${incomes}€`;
+
+  const out = acc.movements
+    .filter(mov => mov < 0)
+    .reduce((acc, mov) => acc + mov, 0);
+  labelSumOut.textContent = `${Math.abs(out)}€`;
+
+  const interest = acc.movements
+    .filter(mov => mov > 0)
+    .map(deposit => (deposit * acc.interestRate) / 100)
+    .filter((int, i, arr) => {
+      // console.log(arr);
+      return int >= 1;
+    })
+    .reduce((acc, int) => acc + int, 0);
+  labelSumInterest.textContent = `${interest}€`;
+};
+calcDisplaySummary(account1);
+
+
 //creating the user names with map method
 
 const createUserNames = function (accounts) {
