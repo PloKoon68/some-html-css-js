@@ -427,3 +427,17 @@ map.forEach(function (value, key, map) {
 */
 
 
+/*
+//map, filter, reduce methods on array
+const euro = [345, 542, 22, 54];
+
+//map return a new array from the original array according to the function
+
+const dolar = euro.map(function (value) {
+  return value * 1.1;
+});
+const dolarArrow = euro.map((value) => {
+  return value * 1.1;
+});
+console.log(dolar);
+*/
