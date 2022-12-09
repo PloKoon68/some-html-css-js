@@ -449,4 +449,12 @@ const negatives = euro.filter(function (value) {
   return value < 0;
 });
 console.log(negatives);
+
+
+//reduce comes out with variable after looping through the array. callback functions first parameter is the accumulator, rest the same, and the second parameter of the reduce method
+//is the initial value of the accumulator variable
+const sum = euro.reduce((accumulator, value) => {
+  return (accumulator += value);
+}, 0);
+console.log(sum);
 */
