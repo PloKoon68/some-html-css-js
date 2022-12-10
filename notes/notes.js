@@ -471,4 +471,16 @@ const negIndex = euro.findIndex(function (num) {
 });
 console.log(negIndex);
 
+
+//some and every methods. Some return true if at least 1 element satisfies the condition while every return true if all the elements satisfies the condition.
+console.log(
+  euro.some((element) => {
+    return element > 0;
+  })
+);
+console.log(
+  euro.every((element) => {
+    return element > 0;
+  })
+);
 */
