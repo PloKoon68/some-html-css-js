@@ -458,6 +458,17 @@ const sum = euro.reduce((accumulator, value) => {
 }, 0);
 console.log(sum);
 
+//also you can create an object
+const pn = euro.reduce(
+  (sum, current) => {
+    current > 0 ? (sum.positiveSum += current) : (sum.negativeSum += current);
+    return sum;
+  },
+  { positiveSum: 0, negativeSum: 0 }
+);
+console.log(pn);
+
+
 //find methods the first element that matches the condition
 const neg = euro.find(function (num) {
   return num < 0;
