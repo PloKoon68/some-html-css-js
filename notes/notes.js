@@ -501,4 +501,18 @@ console.log(
     return val;
   })
 );
+
+
+//sort method mutates the original array
+const strArr = ["Mehmet", "Ahmet", "Elif"];
+//on the string arrays, it will sort according to the alphabetical order
+strArr.sort();
+console.log(strArr);
+
+const numArr = [-25, 98, 65, -96, 108];
+//on number arrays, if the function returns positive, it will swap the two elements, if negative, will stay same.
+numArr.sort(function (num1, num2) {
+  return num1 > num2 ? 1 : -1;
+});
+console.log(numArr);
 */
