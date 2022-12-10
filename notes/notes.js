@@ -526,4 +526,32 @@ numArr.sort(function (num1, num2) {
   return num1 > num2 ? 1 : -1;
 });
 console.log(numArr);
+
+
+
+//title casing eaxmple
+const titleCase = function (str) {
+  const exceptions = [
+    "a",
+    "any",
+    "the",
+    "is",
+    "or",
+    "in",
+    "with",
+    "on",
+    "at",
+    "but",
+  ];
+
+  return str
+    .split(" ")
+    .map((current) => {
+      return !exceptions.includes(current)
+        ? current[0].toUpperCase() + current.slice(1)
+        : current;
+    })
+    .join(" ");
+};
+console.log(titleCase("I lost my train in a copy!"));
 */
