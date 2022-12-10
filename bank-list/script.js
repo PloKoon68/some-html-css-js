@@ -98,7 +98,6 @@ const displayMovements = function (movements) {
   });
 };
 
-displayMovements(movements);
 
 //calulating balance with reduce method
 const calcDisplayBalance = function (movements) {
@@ -108,7 +107,6 @@ const calcDisplayBalance = function (movements) {
   labelBalance.textContent = balance + ' EUR';
 };
 
-calcDisplayBalance(account1.movements);
 
 
 //calculating the total deposits and withdrawals
@@ -133,7 +131,6 @@ const calcDisplaySummary = function (acc) {
     .reduce((acc, int) => acc + int, 0);
   labelSumInterest.textContent = `${interest}€`;
 };
-calcDisplaySummary(account1);
 
 
 //creating the user names with map method
@@ -162,6 +159,20 @@ btnLogin.addEventListener('click', function (e) {
       value.pin === Number(inputLoginPin.value)
     );
   });
+  //make the page visible
+  containerApp.style.opacity = 100;
+
+  //saying welcome to the user
+  labelWelcome.textContent = `Welcom back, ${currentUser.owner.split(' ')[0]}`;
+
+  //after entering, clear the input fields and stop the pin input being focused.
+  inputLoginUsername.textContent = inputLoginPin.textContent = '';
+  btnLogin.blur();
+
+  //diplay the rest
+  displayMovements(currentUser.movements);
+  calcDisplayBalance(currentUser.movements);
+  calcDisplaySummary(currentUser);
 });
 
 
