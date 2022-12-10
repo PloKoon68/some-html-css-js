@@ -483,4 +483,22 @@ console.log(
     return element > 0;
   })
 );
+
+
+//flat and flatMap method
+const dimension2Arr = [
+  [1, 2, 3],
+  [4, 5, 6],
+  [7, 8, 9],
+];
+
+//flat method reduces the array 1 dimension, but can reduce more based on the argument you pass to the method.
+console.log(dimension2Arr.flat());
+
+//map and flat methods commonly used together: arr.map().flat(). So flatMap() does that in a shorter and more efficient way
+console.log(
+  dimension2Arr.flatMap((val) => {
+    return val;
+  })
+);
 */
