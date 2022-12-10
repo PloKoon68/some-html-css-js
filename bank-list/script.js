@@ -152,6 +152,18 @@ createUserNames(accounts);
 
 
 
+//login part
+let currentUser;
+btnLogin.addEventListener('click', function (e) {
+  e.preventDefault();
+  const currentUser = accounts.find(function (value) {
+    return (
+      inputLoginUsername.value === value.userName &&
+      value.pin === Number(inputLoginPin.value)
+    );
+  });
+});
+
 
 
 
