@@ -457,4 +457,18 @@ const sum = euro.reduce((accumulator, value) => {
     return accumulator + value;
 }, 0);
 console.log(sum);
+
+//find methods the first element that matches the condition
+const neg = euro.find(function (num) {
+  return num < 0;
+});
+console.log(neg);
+
+//findIndex method
+
+const negIndex = euro.findIndex(function (num) {
+  return num < 0;
+});
+console.log(negIndex);
+
 */
