@@ -610,4 +610,11 @@ console.log(
   now.getHours(),
   now.getMinutes()
 );
+
+
+//when subtracting dates from each other, miliseconds is used for unit
+console.log(
+  //converting miliseconds to day
+  (new Date(2023, 5, 3) - new Date(2023, 5, 1)) / 1000 / 60 / 60 / 24
+);
 */
