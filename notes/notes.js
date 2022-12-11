@@ -565,4 +565,10 @@ console.log(+"25" + 4);
 
 //parseInt and parseFloat converts the strings that doesn't start with char, and trunks the rest
 console.log(parseInt("  25ef"));
+console.log(parseFloat("25rem"));
+
+//to check if it is a number isFinite()
+console.log(Number.isFinite("323"));
+console.log(Number.isFinite(+"323"));
+
 */
