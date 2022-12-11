@@ -571,4 +571,19 @@ console.log(parseFloat("25rem"));
 console.log(Number.isFinite("323"));
 console.log(Number.isFinite(+"323"));
 
+//som math methods: Math. floor, ceil, round, min, max
+
+
+//toFixed specifies the number of digit shown after decimal point and return string
+console.log((1.2657949).toFixed(2));
+console.log();
+
+//the max num in js is 2**(53) - 1
+console.log(Number.MAX_SAFE_INTEGER, 2 ** 53 - 1);
+
+//for larger nums, there is a data type called big int
+
+const big = 20000n;
+console.log(big + 15000n);
+
 */
