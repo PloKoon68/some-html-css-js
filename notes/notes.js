@@ -617,4 +617,12 @@ console.log(
   //converting miliseconds to day
   (new Date(2023, 5, 3) - new Date(2023, 5, 1)) / 1000 / 60 / 60 / 24
 );
+
+
+//Intl
+const now = new Date();
+console.log(Intl.DateTimeFormat("tr-TR").format(now), now);
+//you can search google iso language code table for the DateTimeFormat() parameter, or intl mdn
+
+
 */
