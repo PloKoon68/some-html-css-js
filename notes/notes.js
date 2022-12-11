@@ -611,6 +611,9 @@ console.log(
   now.getMinutes()
 );
 
+//this padStart method adds 0 at the beggining of a template literal if its length is smaller than the first parameter
+console.log(`1`.padStart(3, 0));
+console.log(`${now.getDate()}`.padStart(2, 0));
 
 //when subtracting dates from each other, miliseconds is used for unit
 console.log(
