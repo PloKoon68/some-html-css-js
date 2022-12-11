@@ -591,3 +591,23 @@ console.log(big + BigInt(15000));
 console.log(big + BigInt(15000));
 
 */
+
+/*
+//this object returns the current date
+const now = new Date();
+console.log(now);
+
+console.log(new Date("Jule 13 2021 18:05:36"));
+console.log(new Date("December 23, 2014"));
+//note: month indexes start from 0
+console.log(new Date(2002, 4, 4, 3, 30, 15, 950));
+//day=weekday
+console.log(
+  now.getFullYear(),
+  now.getMonth(),
+  now.getDate(),
+  now.getDay(),
+  now.getHours(),
+  now.getMinutes()
+);
+*/
