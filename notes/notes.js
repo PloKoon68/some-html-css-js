@@ -555,3 +555,14 @@ const titleCase = function (str) {
 };
 console.log(titleCase("I lost my train in a copy!"));
 */
+
+
+
+/*
+//str to number conversion
+//+ before a number string also convets str to num
+console.log(+"25" + 4);
+
+//parseInt and parseFloat converts the strings that doesn't start with char, and trunks the rest
+console.log(parseInt("  25ef"));
+*/
