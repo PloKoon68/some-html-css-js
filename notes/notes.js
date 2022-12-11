@@ -643,4 +643,19 @@ const time = setTimeout(
 
 //you can delete the timer using clearTimeOut(time)
 clearTimeout(time);
+
+//you can also create a period of time
+const interval = setInterval(
+  (one, two) => {
+    console.log(`${one} and ${two} in 3 sec period`);
+  },
+  3000,
+  1,
+  2
+);
+//stopped the interval after 7 sec
+setTimeout(() => {
+  clearTimeout(interval);
+}, 7000);
+
 */
