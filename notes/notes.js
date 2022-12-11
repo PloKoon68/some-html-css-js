@@ -584,6 +584,10 @@ console.log(Number.MAX_SAFE_INTEGER, 2 ** 53 - 1);
 //for larger nums, there is a data type called big int
 
 const big = 20000n;
-console.log(big + 15000n);
+
+//big ints can only be added to big ints
+console.log(big + BigInt(15000));
+
+console.log(big + BigInt(15000));
 
 */
