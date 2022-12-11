@@ -627,5 +627,20 @@ const now = new Date();
 console.log(Intl.DateTimeFormat("tr-TR").format(now), now);
 //you can search google iso language code table for the DateTimeFormat() parameter, or intl mdn
 
+*/
 
+/*
+//timer
+//first parameter: callback func, second: the timeout(miliseconds), third: argumenrts of the cb function.
+const time = setTimeout(
+  (p1, p2) => {
+    console.log(`arguments are ${p1} and ${p2}`);
+  },
+  3000,
+  4,
+  6
+);
+
+//you can delete the timer using clearTimeOut(time)
+clearTimeout(time);
 */
