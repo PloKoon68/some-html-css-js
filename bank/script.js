@@ -32,10 +32,8 @@ document.addEventListener('keydown', function (e) {
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
 //this selects the entire page
 console.log(document.documentElement);
-
 console.log(document.head);
 console.log(document.body);
 
@@ -44,3 +42,32 @@ console.log(document.querySelectorAll('button'));
 //getElementBy... method returns a HTMLCollection, which applies the updates directly
 console.log(document.getElementsByTagName('button'));
 console.log(document.getElementsByClassName('operations'));
+
+const header = document.querySelector('.header');
+//creating an html element
+const message = document.createElement('div');
+message.classList.add('cookie-message');
+
+message.innerHTML =
+  'writing the text of the message element <button class= "btn btn--close-cookie";>button</button>';
+
+//this adds the element as the first child of the header
+//header.prepend(message);
+//this takes that element and makes it as the last child, since there is only one message element. To copy it you should use
+header.append(message);
+//header.prepend(message.cloneNode(true));
+//before and after methods, as there names indicate, will but the element right after the header as sibling
+header.before(message);
+header.after(message);
+
+//remove the element as we press the button
+
+/*document.querySelector('.btn--close-cookie').addEventListener('click', () => {
+  message.remove();
+});*/
+//did the same as below
+message.addEventListener('click', () => {
+  message.remove();
+  //the old way of doing it:
+  //message.parentElement.removeChild(message);
+});
