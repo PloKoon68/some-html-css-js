@@ -71,3 +71,16 @@ message.addEventListener('click', () => {
   //the old way of doing it:
   //message.parentElement.removeChild(message);
 });
+
+//styles
+message.style.backgroundColor = 'green';
+message.style.width = '120%';
+
+//accessing attributes
+//this is an image with the class nav__logo
+const logo = document.querySelector('.nav__logo');
+//can access the standard attributes just by logo.
+console.log(logo.src, logo.alt);
+//but with unstandard attributes, it will return undefined. So using logo.getAttribute('') is safer
+console.log(logo.getAttribute('class'));
+
