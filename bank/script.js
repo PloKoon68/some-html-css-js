@@ -31,3 +31,16 @@ document.addEventListener('keydown', function (e) {
 });
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+//this selects the entire page
+console.log(document.documentElement);
+
+console.log(document.head);
+console.log(document.body);
+
+//this returns a nodeList that consists of the button items
+console.log(document.querySelectorAll('button'));
+//getElementBy... method returns a HTMLCollection, which applies the updates directly
+console.log(document.getElementsByTagName('button'));
+console.log(document.getElementsByClassName('operations'));
